@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="ms.png" type="image/png">
+    <title>Microsoft – AI, Cloud, Productivity, Computing, Gaming &amp; Apps</title>
+</head>
+<body>
+
+  <div class="navbar flex justify-between items-center relative p-2 w-full">
+    <div class="flex justify-center items-center md:order-2">
+      <div class="hamburger inline-block p-4 cursor-pointer md:hidden">
+          <div class="line h-0.5 w-6 my-1 bg-black "></div>
+          <div class="line h-0.5 w-6 my-1 bg-black "></div>
+          <div class="line h-0.5 w-6 my-1 bg-black "></div>
+      </div>
+       <div class="search md:hidden w-6 mr-4"><img src="search.svg" alt=""></div>
+    </div>
+    
+        <div class="logo text-center flex md:order-1 relative">
+          <div class="p-2 w-36  flex justify-center sm:-mr-20"><img src="mslogo.png" alt="" class=""></div>
+
+          <div class="features absolute left-0 w-fit md:static md:w-auto mt-3 bg-gray-200 md:bg-white inset-0 md:flex md:mx-24 md:space-x-4 -translate-x-80 md:translate-x-0">
+            <div class="fitem hover:underline hover:underline-offset-8 cursor-pointer text-sm">Microsoft 365</div>
+            <div class="fitem hover:underline hover:underline-offset-8 cursor-pointer text-sm">Teams </div>
+            <div class="fitem hover:underline hover:underline-offset-8 cursor-pointer text-sm">Copilot</div>
+            <div class="fitem hover:underline hover:underline-offset-8 cursor-pointer text-sm">Windows</div>
+            <div class="fitem hover:underline hover:underline-offset-8 cursor-pointer text-sm">Surface</div>
+            <div class="fitem hover:underline hover:underline-offset-8 cursor-pointer text-sm">Xbox</div>
+            <div class="fitem hover:underline hover:underline-offset-8 cursor-pointer text-sm">Support</div>
+          </div>
+        </div>
+
+        <div class="cart text-center md:order-3 flex items-center">
+            <div class="search hidden md:block text-sm mr-4"> All Microsoft </div>
+            <div class="mx-2  text-sm">Search</div><img src="search.svg" alt="" class="w-6 lg:w-4 sm:mr-4">
+            <div class="text-sm flex items-center ">
+              <div class="mx-2 text-sm">Cart</div> <img src="cart.svg" alt="" class="w-6 lg:w-4 sm:mr-4">
+              <div class="mx-2 text-sm">Sakshi</div>  <img src="acc.svg" alt="" class="w-6 lg:w-4 sm:mr-8">
+            </div>
+        </div>
+  </div>
+  
+  <div class="slider flex flex-col md:flex-row w-full overflow-hidden">
+    <div class="slide flex flex-col justify-center ">
+      <div class="right">
+        <img src="msimg1.avif" alt="" class="h-[300px] md:h-[450px] w-full  sm:mx-[20] md:mx-0">
+      </div>
+
+      <div class=" left flex flex-col justify-center py-8 md:bg-white md:h-[200px] md:bg-transparent md:absolute md:top-28 md:left-10 text-black mx-8 md:w-1/3">
+        <h1 class="text-3xl md:text-3xl font-medium md:mx-5 md:mt-5">Meet Surface Pro</h1>
+        <p class="md:mx-5 mt-2 w-4/5 md:text-left">
+          This laptop's unrivalled flexibility and AI features like Live Captions and Cocreator enable you to do more than you ever imagined.
+        </p>
+        <button class="bg-[#0067b8] hover:bg-[#015ea5] w-32 text-white font-semibold text-sm my-4 md:mx-5 px-4 py-2">Learn More</button>
+      </div>
+    </div>
+    
+    <div class="slide flex flex-col md:flex-row-reverse  justify-center">
+      <div class="right">
+        <img src="msimg2.avif" alt="" class="h-[300px] md:h-[450px]  w-full sm:10 object-cover">
+      </div>
+      <div class="right flex flex-col justify-center py-8  lg:mt-20 md:h-[200px] md:bg-transparent md:absolute md:top-10 md:right-10 text-black mx-8 md:w-1/3">
+        <h1 class="text-3xl md:text-3xl font-medium md:mx-5 md:mt-5">Microsoft 365</h1>
+        <p class=" md:mx-5 mt-2 w-4/2 md:text-left">
+          Introducing Microsoft 365 Premium with our highest usage limits and exclusive Copilot features for AI power users.
+        </p>
+        <button class="bg-[#0067b8] w-64 h-12 whitespace-nowrap hover:bg-[#015ea5]  text-white font-semibold text-sm my-4 md:mx-5 px-4 py-2">Discover Microsoft 365 Premium</button>
+        <span class="text-[#0067b8] font-medium text-xl md:mx-5 hover:underline ">See other Microsoft 365 options ></span>
+      </div>
+    </div>
+
+    <hr class="bg-gray-600 -mt-3 mb-5">
+
+
+   <button id="prev" class="absolute  lg:w-9 left-1/2 -translate-x-[4rem] bottom-80 lg:bottom-24 p-2 rounded-full shadow">
+     <img src="arr left.svg" alt="">
+   </button>
+
+   <button id="next" class="absolute lg:w-9 left-1/2 translate-x-[2rem]  bottom-80 lg:bottom-24  p-2 rounded-full shadow">
+     <img src="arr right.svg" alt="">
+   </button>
+
+</div>
+
+    <div class="promo mt-20 space-y-6 lg:mt-16 flex flex-col lg:flex-row lg:justify-center">
+       <div class="item flex lg:flex-col items-center mx-4 lg:mt-6 space-x-2">
+         <img src="icon1.svg" alt="" class=" w-10 lg:w-9">
+         <span class="underline font-medium text-xl text-[#0067b8] ">Choose your Microsoft 365</span>
+       </div>
+        <div class="item flex lg:flex-col items-center mx-4 space-x-2">
+         <img src="icon2.svg" alt="" class="w-10 lg:w-9">
+         <span class="underline font-medium text-xl text-[#0067b8]">Shop Xbox</span>
+       </div>
+        <div class="item flex lg:flex-col  items-center mx-4 space-x-2">
+         <img src="icon1.svg" alt="" class="w-10 lg:w-9">
+         <span class="underline font-medium  text-xl text-[#0067b8]">Get Windows 11</span>
+       </div>
+        <div class="item  flex lg:flex-col items-center mx-4 space-x-2">
+         <img src="icon3.svg" alt="" class="w-10 lg:w-9">
+         <span class="underline font-medium  text-xl text-[#0067b8]">Explore Surface devices</span>
+       </div>
+    </div>    
+    
+  
+    <div class="flex flex-wrap justify-center gap-5 mt-20 mx-8">
+        <div class="flex flex-col shadow-2xl text-left flex-1 min-w-[250px] max-w-[300px]">
+          <img src="card1.avif" alt="" class="w-full h-48 object-cover ">
+          <p class="text-2xl mx-4 font-bold mt-4">Surface Laptop, Copilot+ PC</p>
+          <span class="mx-4 mt-4">Unlock AI features like Live Captions and Cocreator with this exceptionally powerful laptop.</span>
+          <button class=" mx-4  bg-[#0067b8] hover:bg-[#015ea5] w-32 text-white font-semibold text-sm my-6 px-4 py-2">Learn more</button>
+        </div>
+        <div class="flex flex-col shadow-2xl text-left flex-1 min-w-[250px] max-w-[300px]">
+          <img src="card2.avif" alt="" class="w-full h-48 object-cover">
+          <p class="text-2xl mx-4 font-bold mt-4">Microsoft Edge</p>
+          <span class="mx-4 mt-4">World-class performance with more privacy, more productivity and more value while you browse.</span>
+          <button class="mx-4 mt-14 bg-[#0067b8] hover:bg-[#015ea5] w-32 text-white font-semibold text-sm my-6 px-4 py-2">Download now</button>
+        </div>
+        <div class="flex flex-col shadow-2xl text-left flex-1 min-w-[250px] max-w-[300px]">
+          <img src="card3.avif" alt="" class="w-full h-48 object-cover">
+          <p class="text-2xl mx-4 font-bold mt-4">Xbox Game Pass Ultimate</p>
+          <span class="mx-4 mt-4">Play new titles on day one. Enjoy hundreds of high-quality games with friends on console, PC or cloud.</span>
+          <button class="mx-4 bg-[#0067b8] hover:bg-[#015ea5] w-32 text-white font-semibold text-sm my-6 px-4 py-2">Join now</button>
+        </div>
+        <div class="flex flex-col shadow-2xl text-left flex-1 min-w-[250px] max-w-[300px]">
+          <img src="card4.webp" alt="" class=" w-full h-48 object-cover">
+          <p class="mx-4 text-2xl font-bold mt-4">Xbox Series X</p>
+          <span class="mx-4 mt-4">The fastest, most powerful Xbox ever.</span>
+          <button class=" mx-4 bg-[#0067b8] hover:bg-[#015ea5] w-40 text-white font-semibold text-sm my-6 px-4 py-2 mt-24 whitespace-nowrap">Shop Xbox Series X</button>
+        </div>
+    </div>
+  </div>
+
+   <div class="relative mx-auto px-4  md:px-16 mt-10">
+  <img src="msimg3.avif" alt="" class="h-[350px] sm:h-[450px] md:h-[550px] w-full object-cover rounded-lg">
+  
+  <div class="absolute sm:mx-10  top-1/2 left-4 md:left-20 transform -translate-y-1/2 flex flex-col space-y-4 md:space-y-6 md:text-black">
+    <p class="text-2xl  sm:text-3xl md:text-4xl font-semibold">Xbox Series S</p>
+    <span class="text-sm sm:text-base md:text-lg">Next-gen performance in the smallest Xbox ever</span>
+    <button class="bg-[#0067b8] hover:bg-[#015ea5] w-36 sm:w-40 text-white font-semibold text-sm px-3 py-2 whitespace-nowrap">Shop Xbox Series S</button>
+  </div>
+</div>
+
+      
+
+    <div class="class">
+       <p class="text-3xl font-semibold mx-5 mt-5 lg:mx-14">For business</p>
+
+       <div class="flex flex-wrap justify-center gap-5 mt-5 mx-5">
+        <div class="flex flex-col shadow-2xl text-left flex-1 min-w-[250px] max-w-[300px]">
+          <img src="card5.avif" alt="" class="w-full h-48 object-cover ">
+          <button class="mx-4  bg-yellow-500 hover:bg-[#015ea5] w-16 font-semibold text-sm my-4 -mb-5 py-1">New</button>
+          <p class="text-2xl w-4/5 mx-4 font-semibold mt-8">Surface Pro for Business, Copilot+ PC | Intel</p>
+          <span class="mx-4 mt-6 mb-4">Ultra-versatile and built with Intel® Core™ Ultra processors (Series 2) that power AI experiences to amplify your team’s productivity.</span>
+          <button class=" mx-4 mt-auto bg-[#0067b8] hover:bg-[#015ea5] w-32 text-white font-semibold text-sm my-6 px-4 py-2">Learn more</button>
+        </div>
+        <div class="flex flex-col shadow-2xl text-left flex-1 min-w-[250px] max-w-[300px]">
+          <img src="card6.avif" alt="" class="w-full h-48 object-cover">
+          <p class="text-2xl mx-4 w-1/2 font-semibold mt-8">Microsoft 365 Copilot</p>
+          <span class="mx-4 mt-4">Save time and focus on the things that matter most with AI in Microsoft 365 for business.</span>
+          <button class="mx-4 mt-auto bg-[#0067b8] hover:bg-[#015ea5] w-32 text-white font-semibold text-sm my-6 px-4 py-2">Learn more</button>
+        </div>
+        <div class="flex flex-col shadow-2xl text-left flex-1 min-w-[250px] max-w-[300px]">
+          <img src="card7.avif" alt="" class="w-full h-48 object-cover">
+          <p class="text-2xl w-2/3  mx-4 font-semibold mt-8">20% off Windows 365</p>
+          <span class="mx-4 mt-4">Experience seamless productivity with Windows 365 Cloud PC – delivering the full Windows experience on any device.</span>
+          <button class="mx-4 mt-auto bg-[#0067b8] hover:bg-[#015ea5] w-32 text-white font-semibold text-sm my-6 px-4 py-2">Learn more</button>
+        </div>
+        <div class="flex flex-col shadow-2xl text-left flex-1 min-w-[250px] max-w-[300px]">
+          <img src="card8.jpg" alt="" class=" w-full h-48 object-cover">
+          <p class="mx-4 text-2xl font-semibold mt-8">Join the era of AI</p>
+          <span class="mx-4 mt-4">Create, communicate, and code with the latest Microsoft AI solutions. </span>
+          <button class=" mx-4 mt-auto bg-[#0067b8] hover:bg-[#015ea5] w-40 text-white font-semibold text-sm my-6 px-4 py-2 whitespace-nowrap">Explore AI solutions</button>
+        </div>
+    </div>
+     
+
+    <div class="mt-28 mb-28 mx-12 flex gap-5 text-md ">Follow Microsoft
+      <img src="f.avif" alt="" class="w-6 -mt-1 ">
+      <img src="x.avif" alt="" class="w-6 -mt-1 ">
+      <img src="y.webp" alt="" class="w-6 -mt-1 ">
+    </div>
+    
+  <div class="flex justify-end mx-8">
+   <button class="back-to-top flex items-center -mt-16 bg-gray-300 hover:bg-gray-400 font-semibold text-sm my-6 px-4 py-2 -mr-5 w-40 rounded">
+    <img src="arr.svg" alt="arrow" class="w-5 h-5 mx-3">
+    <span class="mr-1">Back to top</span>
+   </button>
+  </div>
+  
+<div class="flex flex-wrap justify-between text-gray-600 bg-gray-200 px-14 py-12">
+    <div class="flex flex-col mb-6">
+      <div class="font-semibold mb-3 "> What's new</div>
+      <div class="cursor-pointer mb-3 hover:underline text-sm"> Surface Laptop</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Copilot for organizations</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Copilot for personal use</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Microsoft 365</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Explore Microsoft products</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Windows 11 apps</div>
+    </div>
+    
+    <div class="flex flex-col mb-6">
+      <div class="font-semibold mb-3">Microsoft Store</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Account profile</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Download Center</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Microsoft Store Support</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Returns</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Order tracking</div>
+    </div>
+    
+    <div class="flex flex-col mb-6 sm:-mx-4">
+      <div class="font-semibold mb-3  "> Education</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Microsoft in education</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Devices for education</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Microsoft Teams for Education</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Microsoft 365 Education</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Office Education</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Educator training and development</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Deals for students and parents</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Azure for students</div>
+    </div>
+
+    <div class="flex flex-col mb-6">
+      <div class="font-semibold  mb-3"> Business</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Microsoft Cloud</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Microsoft Security</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Azure</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Dynamics 365</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Microsoft 365</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Microsoft Advertising</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Microsoft 365 Copilot</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Microsoft Teams</div>
+    </div>
+
+    <div class="flex flex-col mb-6">
+      <div class="font-semibold mb-3"> Developer & IT</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Microsoft Developer</div>
+      <div class="cursor-pointer  mb-3 mb-3hover:underline text-sm"> Microsoft Learn</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Support for AI marketplace apps</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Microsoft Tech Community</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Microsoft Marketplace</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Microsoft Power Platform</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Visual Studio</div>
+    </div>
+
+    <div class="flex flex-col mb-6">
+      <div class="font-semibold mb-3 "> Company</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Careers</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> About Microsoft</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm">Company news</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Privacy at Microsoft</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Investors</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Security</div>
+      <div class="cursor-pointer  mb-3 hover:underline text-sm"> Sustainability</div>
+    </div>
+  
+    
+  </div>  
+
+  <div class="flex justify-between items-center flex-wrap text-sm text-gray-600 bg-gray-200 px-8 py-4 border-t border-gray-300">
+
+  <div class="flex gap-5">
+    <div>English (India)</div>
+    <div>Your Privacy Choices</div>
+    <div>Consumer Health Privacy</div>
+  </div>
+  <div class="flex flex-wrap gap-5">
+    <div class="">Contact Microsoft</div>
+    <div>Privacy</div>
+    <div>Terms of use</div>
+    <div> Trademarks</div>
+    <div>About our ads</div>
+    <div>© Microsoft 2025</div>
+  </div>
+
+ </div>
+    
+</div>
+    
+
+  <script src="script.js"></script>
+</body>
+</html>
